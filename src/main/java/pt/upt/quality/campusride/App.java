@@ -19,5 +19,7 @@ public class App {
                                         FleetReport report) {
         System.out.printf("S10 / 40 min = %.2f%n",
                 fleet.findById("S10").calculatePrice(40));
+        System.out.println("Available vehicles = "
+                + report.availableVehicleIds());
     }
 }
